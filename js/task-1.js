@@ -1,9 +1,9 @@
 const categories = document.querySelectorAll('#categories .item');
-console.log('Number of categories: ', categories.length); // Number of categories:  3
+console.log('Number of categories: ', categories.length);
 categories.forEach(category => {
   const categoryElementsCount = category.querySelectorAll('ul li');
   for (let i = 0; i < categoryElementsCount.length; i++) {
-    categoryElementsCount[i].classList.add('option-item');
+    categoryElementsCount[i].classList.add('opt-item');
   }
 
   console.log('Category:', category.firstElementChild.textContent);
